@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  outline: red 1px solid;
 }
 
 .footer {
