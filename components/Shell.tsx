@@ -16,22 +16,8 @@ const Shell = (props) => (
           <div className="text-xl">{AppConfig.description}</div>
         </div>
         <div>
-          <Navbar>
-            <li className="mr-6">
-              <Link href="/">
-                <a>Home</a>
-              </Link>
-            </li>
-            <li className="mr-6">
-              <Link href="/about/">
-                <a>About</a>
-              </Link>
-            </li>
-            <li className="mr-6">
-              <a href="https://github.com/ixartz/Next-js-Blog-Boilerplate">
-                GitHub
-              </a>
-            </li>
+          <Navbar location={props.location} >
+
           </Navbar>
         </div>
       </div>
