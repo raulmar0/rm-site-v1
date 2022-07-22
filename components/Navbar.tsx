@@ -31,6 +31,9 @@ const Navbar = (props) => (
         .active a {
           @apply text-cyan-500;
         }
+        .navbar {
+          overflow-x: scroll;
+        }
       `}
     </style>
   </ul>
