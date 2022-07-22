@@ -1,6 +1,5 @@
 import GhostContentAPI from '@tryghost/content-api';
-// const { CONTENT_API_KEY } = process.env;
-const CONTENT_API_KEY = '35bd6367810ca3ea073ee2e397'
+const { CONTENT_API_KEY } = process.env;
 
 export const getPosts = async (fields: string) => {
   const api = new GhostContentAPI({

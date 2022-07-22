@@ -1,3 +1,5 @@
-export const Post = props => {
+const Post = props => {
 
 }
+
+export default Post;
