@@ -34,7 +34,7 @@ const BlogGallery = ({ posts }) => {
         {
           posts.map((post) => (
           // eslint-disable-next-line react/jsx-key
-          <div className="py-8 flex flex-wrap md:flex-nowrap">
+          <div className="py-8 flex flex-wrap md:flex-nowrap justify-between">
             <div className="md:flex-grow">
               <Link href='/posts/[slug]' as={`/posts/${post.slug}`}>
                 <a className="bloglink">
