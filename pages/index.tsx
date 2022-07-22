@@ -17,7 +17,7 @@ const Home = ({ posts }) => (
     <Head>
       <title>raulmar</title>
       <meta name="description" content="my online home" />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon2.ico" />
     </Head>
     <Shell location="home">
       <BlogGallery posts={posts}/>  
