@@ -3,7 +3,7 @@ const { CONTENT_API_KEY } = process.env;
 
 export const getPosts = async (fields: string) => {
   const api = new GhostContentAPI({
-    url: 'https://raulmar.me',
+    url: 'https://ghost.raulmar.com',
     key: CONTENT_API_KEY,
     version: "v5.0"
   });
