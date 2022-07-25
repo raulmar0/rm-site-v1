@@ -5,8 +5,7 @@ import styles from '../styles/Home.module.css'
 import { getPosts } from '../utils/getPosts'
 
 export const getStaticProps = async ({ params }) => {
-  const posts = await getPosts('title,slug,tag,html,published_at');
-  
+  const posts = await getPosts('title,slug,tag,html,published_at,reading_time');
   return {
     props: { posts }
   }

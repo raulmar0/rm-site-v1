@@ -5,20 +5,18 @@ import { getPosts } from '../../utils/getPosts';
 
 export const getStaticProps = async ({ params }) => {
   const post = await getPostData(params.slug);
-  console.log(params)
   return {
     props: { post }
   }
 }
 
 export const getStaticPaths = async () => {
-  const posts = await getPosts('slug,title');
+  const posts = await getPosts('slug');
   const paths = posts.map(post => ({
     params: {
       slug: post.slug
     }
   }))
-  console.log(paths)
   return {
     paths,
     fallback: true
