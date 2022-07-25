@@ -3,6 +3,8 @@ import React from "react";
 import Link from "next/link";
 
 import { format } from "date-fns";
+import { read } from "fs";
+import readingTime from "reading-time";
 
 // import { Pagination, IPaginationProps } from '../pagination/Pagination';
 // import { PostItems } from '../utils/Content';
@@ -34,7 +36,7 @@ const BlogGallery = ({ posts }) => {
                   </h2>
                 </a>
               </Link>
-              <span className="mt-1 text-gray-500 text-sm">{post.reading_time === 0 ? 1 : post.reading_time} min read</span>
+              <span className="mt-1 text-gray-500 text-sm">{readingTime(post.html).text}</span>
             </div>
             <div className="md:mb-0 mb-6 flex-shrink-0 flex flex-col">
               <span className="font-semibold title-font text-gray-500">
