@@ -16,14 +16,6 @@ import readingTime from "reading-time";
 
 
 const BlogGallery = ({ posts }) => {
-  
-  const titles = posts.map(post => post.title);
-  const rawReadingTimes = posts.map(post => readingTime(post.html));
-  const readingTimes = rawReadingTimes.map(readingTime => readingTime.text);
-  const slugs = posts.map(post => post.slug);
-  const tags = posts.map(post => post.tags[0].name);
-  const rawDates = posts.map(post => post.published_at);
-  const dates = rawDates.map(date => format(new Date(date), 'dd/MM/yyyy'));
 
   return (
   <>    
