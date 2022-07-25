@@ -35,10 +35,6 @@ const Post = (props) => {
   }
   return (
   <>
-    {/* <div>
-      {props.posts[0].html}
-      {JSON.stringify(props)}
-    </div> */}
     <Link href='/'>
       <a href="">Back</a>
     </Link>
