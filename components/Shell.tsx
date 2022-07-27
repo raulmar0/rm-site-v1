@@ -15,10 +15,17 @@ const Shell = (props) => (
           </div>
           <div className="text-xl">{AppConfig.description}</div>
         </div>
-        <div>
+        <div className="navbar-scroll">
           <Navbar location={props.location} >
 
           </Navbar>
+          <style jsx>
+            {`
+              .navbar-scroll {
+                overflow: auto;
+              }
+            `}
+          </style>
         </div>
       </div>
 
