@@ -33,13 +33,17 @@ const Post = (props) => {
   }
   return (
   <>
-    <Link href='/'>
-      <a href="">Back</a>
-    </Link>
-    <h1>{post.title}</h1>
-    <div dangerouslySetInnerHTML={{__html: post.html}}>
-
-    </div>
+  <div className='antialiased px-5 md:px-0'>
+    <article className="max-w-screen-md mx-auto">
+      <Link href='/'>
+        <a className="mt-6 inline-block px-5 py-1 text-indigo-600 border border-indigo-600 rounded-full hover:text-white hover:bg-indigo-600 active:bg-indigo-500 focus:outline-none focus:ring" href="/download">
+          <span> Back to raulmar</span>
+        </a>
+      </Link>
+      <h1 className="post-title">{post.title}</h1>
+      <div className="post-container" dangerouslySetInnerHTML={{__html: post.html}}></div>
+    </article>
+  </div>
   </>
   )
 }

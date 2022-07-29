@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 
 import { format } from "date-fns";
-import { read } from "fs";
 import readingTime from "reading-time";
 
 // import { Pagination, IPaginationProps } from '../pagination/Pagination';

@@ -23,13 +23,13 @@ const Navbar = (props) => (
           @apply p-4 -mb-px border-b border-transparent;
         }
         .navbar :global(a:hover) {
-          @apply no-underline text-cyan-500;
+          @apply no-underline text-indigo-800;
         }
         .active {
-          @apply p-4 -mb-px border-b border-current text-cyan-500;
+          @apply p-4 -mb-px border-b border-current text-indigo-800;
         }
         .active a {
-          @apply text-cyan-500;
+          @apply text-indigo-800;
         }
       `}
     </style>
