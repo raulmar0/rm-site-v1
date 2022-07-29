@@ -1,12 +1,9 @@
-import Link from "next/link";
 import { AppConfig } from "../utils/AppConfig";
 import { Navbar } from "./Navbar";
 
 
 const Shell = (props) => (
   <div className="antialiased w-full text-gray-700 px-3 md:px-0">
-    {props.meta}
-
     <div className="max-w-screen-md mx-auto">
       <div className="border-b border-gray-300">
         <div className="pt-16 pb-8">
@@ -24,7 +21,7 @@ const Shell = (props) => (
 
       <div className="text-xl py-5">{props.children}</div>
 
-      <div className="border-t border-gray-300 text-center py-8 text-sm">
+      <footer className="border-t border-gray-300 text-center py-8 text-sm">
         © Copyright {new Date().getFullYear()} {AppConfig.title}. Powered with{' '}
         <span role="img" aria-label="Love">
           ♥
@@ -36,7 +33,7 @@ const Shell = (props) => (
          * The link doesn't need to appear on every pages, one link on one page is enough.
          * Thank you for your support it'll mean a lot for us.
          */}
-      </div>
+      </footer>
     </div>
   </div>
 );
