@@ -24,14 +24,51 @@ a:hover {
 
 /* POST STYLES */
 
+@function neo-rem($value) {
+  @return $value * 0.625 * 1rem;
+}
+
+.post-title {
+  font-size: clamp(neo-rem(3.2),5vw,neo-rem(5.2));          
+  margin: neo-rem(1.5) 0;
+  font-weight: 800;
+  letter-spacing: -.015em;
+}
+
+.post-container>*+* {
+  margin-top: max(3.2vmin,24px);
+  margin-bottom: 0;
+}
+
+.post-container>[id]+* {
+  margin-top: 1.5rem!important;
+}
+
 .post-container {
-  h1 {
-    margin: 1.5rem 0;
-    font-size: 4rem;
-    font-weight: 800;
-    letter-spacing: -.015em;
-  }
   
+  hr {
+    border: none;
+  }
+
+  h1 {
+    font-size: neo-rem(2.8);          
+    margin: 2em 0 0;
+    font-weight: 700;
+    letter-spacing: -.015em;
+    border-bottom: 1px #e2e2e2 solid;
+  }
+
+  h2 {
+    margin: 1.5em 0 .5em;
+    font-size: neo-rem(2.8);
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: neo-rem(2.4);
+    font-weight: 600;
+  }
+
   pre {
     background-color: #15171a;
     color: #e5eff5;
@@ -39,7 +76,7 @@ a:hover {
     padding: 10px;
     padding: 16px 20px;
     border-radius: 5px;
-    font-size: 1.4rem;
+    font-size: neo-rem(1.4);
   }
 
   img {
@@ -48,22 +85,28 @@ a:hover {
 
   p {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: neo-rem(2);
     line-height: 1.6em;
+    // margin-top: 0;
+    // margin-top: max(4.8vmin,32px);
   }
   
-  .post-container>*+* {
-    margin-top: max(3.2vmin,24px);
-    margin-bottom: 0;
-}
-  
   @media screen and (max-width: 600px) {
+    h2 {
+      font-size: neo-rem(2.3);
+    }
+    
+    h3 {
+      font-size: neo-rem(1.7);
+    }
+
     p {
-      font-size: 1.6rem;
+      font-size: neo-rem(1.6);
     }
     .pre {
-      font-size: 1.2rem;
+      font-size: neo-rem(1.2);
     }
+
   }
 
 }

@@ -33,13 +33,22 @@ const Post = (props) => {
   }
   return (
   <>
-    <Link href='/'>
-      <a href="">Back</a>
-    </Link>
-    <h1>{post.title}</h1>
-    <div dangerouslySetInnerHTML={{__html: post.html}}>
-
-    </div>
+  <div className='antialiased px-5 md:px-0'>
+    <article className="max-w-screen-md mx-auto">
+      <Link href='/'>
+        <a href="">Back</a>
+      </Link>
+        <h1 className="post-title">{post.title}</h1>
+        <div className="post-container" dangerouslySetInnerHTML={{__html: post.html}}></div>
+    </article>
+  </div>
+    <style jsx>
+      {`
+        {/* article {
+          outline: 1px solid red;
+        } */}
+      `}
+    </style>
   </>
   )
 }
