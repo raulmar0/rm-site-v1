@@ -5,7 +5,7 @@ const Navbar = (props) => (
   <ul className="navbar flex text-sm font-medium border-b border-gray-100">
     <li className={props.location === 'home' ? 'active' : 'inactive'}>
       <Link href="/">
-        <a>Home</a>
+        <a>Blog</a>
       </Link>
     </li>
     <li className={props.location === 'about' ? 'active' : 'inactive'}>
@@ -14,7 +14,7 @@ const Navbar = (props) => (
       </Link>
     </li>
     <li className={props.location === 'github' ? 'active' : 'inactive'}>
-      <a href="">GitHub</a>
+      <a href="">Projects</a>
     </li>
 
     <style jsx>
@@ -30,9 +30,6 @@ const Navbar = (props) => (
         }
         .active a {
           @apply text-cyan-500;
-        }
-        .navbar {
-          overflow-x: scroll;
         }
       `}
     </style>
