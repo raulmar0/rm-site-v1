@@ -13,8 +13,10 @@ const Navbar = (props) => (
         <a>About</a>
       </Link>
     </li>
-    <li className={props.location === 'github' ? 'active' : 'inactive'}>
-      <a href="">Projects</a>
+    <li className={props.location === 'projects' ? 'active' : 'inactive'}>
+      <Link href="/projects/">
+        <a>Projects</a>
+      </Link>
     </li>
 
     <style jsx>
