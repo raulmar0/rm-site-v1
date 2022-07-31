@@ -2,40 +2,32 @@
 const ProjectsGallery = () => {
   const posts = [
     {
-      title: "What is SaaS? Software as a Service Explained",
-      desc: "Going into this journey, I had a standard therapy regimen, based on looking at the research literature. After I saw the movie, I started to ask other people what they did for their anxiety, and some",
-      img: "https://images.unsplash.com/photo-1556155092-490a1ba16284?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      authorLogo: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
-      authorName: "Sidi dev",
-      date: "Jan 4 2022",
-      href: "javascript:void(0)",
+      title: "React Layout for the main page of a video-streaming website",
+      categories: ["React", "Netlify"],
+      img: "https://raulmarfiles.blob.core.windows.net/raulmar-site-files/projects-thumbnails/platzi-video-react-layout-thumbnail.png",
+      demo: "https://fastidious-puffpuff-c49175.netlify.app/",
+      github: "https://github.com/raulmar0/rickAndMortySPA",
     },
     {
-      title: "A Quick Guide to WordPress Hosting",
-      desc: "According to him, â€œI'm still surprised that this has happened. But we are surprised because we are so surprised.â€More revelations about Whittington will be featured in the film",
-      img: "https://images.unsplash.com/photo-1620287341056-49a2f1ab2fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      authorLogo: "https://api.uifaces.co/our-content/donated/FJkauyEa.jpg",
-      authorName: "Micheal",
-      date: "Jan 4 2022",
-      href: "javascript:void(0)",
+      title: "Single Page Application with vanilla JavaScript",
+      categories: ["JavaScript", "Webpack", "Travis CI"],
+      img: "https://raulmarfiles.blob.core.windows.net/raulmar-site-files/projects-thumbnails/rick-and-morty-spa-thumbnail.png",
+      demo: "https://raulmar0.github.io/rickAndMortySPA/",
+      github: "https://github.com/raulmar0/rickAndMortySPA",
     },
     {
-      title: "7 Promising VS Code Extensions Introduced in 2022",
-      desc: "I hope I remembered all the stuff that they needed to know. They're like, 'okay,' and write it in their little reading notebooks. I realized today that I have all this stuff that",
-      img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      authorLogo: "https://randomuser.me/api/portraits/men/46.jpg",
-      authorName: "Luis",
-      date: "Jan 4 2022",
-      href: "javascript:void(0)",
+      title: "Personal Website",
+      categories: ["TypeScript", "Next", "Tailwind", "Azure", "Ghost"],
+      img: "https://raulmarfiles.blob.core.windows.net/raulmar-site-files/projects-thumbnails/raulmar-site-thumbnail.png",
+      demo: "https://raulmar.com/",
+      github: "https://github.com/raulmar0/raulmar-site",
     },
     {
-      title: "How to Use Root C++ Interpreter Shell to Write C++ Programs",
-      desc: "The powerful gravity waves resulting from the impact of the planets' moons â€” four in total â€” were finally resolved in 2015 when gravitational microlensing was used to observe the",
-      img: "https://images.unsplash.com/photo-1617529497471-9218633199c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      authorLogo: "https://api.uifaces.co/our-content/donated/KtCFjlD4.jpg",
-      authorName: "Lourin",
-      date: "Jan 4 2022",
-      href: "javascript:void(0)",
+      title: "Library for typing effect",
+      categories: ["TypeScript"],
+      img: "https://raulmarfiles.blob.core.windows.net/raulmar-site-files/projects-thumbnails/typing-phrases-thumbnail.png",
+      demo: "https://eager-noether-f23a3e.netlify.app/",
+      github: "https://github.com/raulmar0/TypingPhrases",
     },
   ];
 
@@ -44,40 +36,40 @@ const ProjectsGallery = () => {
       <div className="mt-0 grid gap-2 sm:grid-cols-2 lg:grid-cols-2">
         {posts.map((items, key) => (
           <article
-            className="max-w-md mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm"
+            className="project min-w-full max-w-sm mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm"
             key={key}
           >
-            <a href={items.href}>
-              <img
-                src={items.img}
-                loading="lazy"
-                alt={items.title}
-                className="w-full h-48 rounded-t-md"
-              />
-              <div className="flex items-center mt-2 pt-3 ml-4 mr-2">
-                <div className="flex-none w-10 h-10 rounded-full">
-                  <img
-                    src={items.authorLogo}
-                    className="w-full h-full rounded-full"
-                    alt={items.authorName}
-                  />
-                </div>
-                <div className="ml-3">
-                  <span className="block text-gray-900">
-                    {items.authorName}
-                  </span>
-                  <span className="block text-gray-400 text-sm">
-                    {items.date}
-                  </span>
-                </div>
+            <img
+              src={items.img}
+              loading="lazy"
+              alt={items.title}
+              className="w-full h-48 rounded-t-md"
+            />
+            <div className="pt-3 ml-4 mr-2 mb-3">
+              <h3 className="text-xl text-gray-900">{items.title}</h3>
+              <div className="flex flex-wrap">
+                {items.categories.map((category, key) => (
+                    <span className="mt-1 px-2 py-0 mr-1 text-xs text-gray-800  bg-gray-200 rounded-full dark:bg-gray-300 dark:text-gray-900" key={key}>{category}</span>
+                ))}
               </div>
-              <div className="pt-3 ml-4 mr-2 mb-3">
-                <h3 className="text-xl text-gray-900">{items.title}</h3>
-                <p className="text-gray-400 text-sm mt-1">{items.desc}</p>
-              </div>
-            </a>
+            </div>
+            <div className="ml-4 mr-2 mb-3">
+              <a target="_blank" href={items.demo} rel="noreferrer">
+                <button className="mr-2 px-2 py-1 text-base font-bold text-white uppercase transition-colors duration-200 transform bg-indigo-800 rounded dark:bg-indigo-700 hover:bg-indigo-700 dark:hover:bg-indigo-600 focus:outline-none focus:bg-indigo-700 dark:focus:bg-indigo-600">Demo</button>
+              </a>
+              <a target="_blank" href={items.github} rel="noreferrer">
+                <button className="mr-2 px-2 py-1 text-base font-bold text-white uppercase transition-colors duration-200 transform bg-indigo-800 rounded dark:bg-indigo-700 hover:bg-indigo-700 dark:hover:bg-indigo-600 focus:outline-none focus:bg-indigo-700 dark:focus:bg-indigo-600">GitHub</button>
+              </a>
+            </div>
           </article>
         ))}
+        <style jsx>
+          {`
+            .project :global(a:hover) {
+              @apply no-underline;
+            }
+          `}
+        </style>
       </div>
 
   );
