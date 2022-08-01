@@ -22,6 +22,8 @@ a:hover {
   box-sizing: border-box;
 }
 
+
+
 /* POST STYLES */
 
 @function neo-rem($value) {
@@ -49,7 +51,7 @@ a:hover {
   hr {
     border: none;
   }
-
+  
   h1 {
     font-size: neo-rem(2.8);          
     margin: 2em 0 0;
@@ -57,34 +59,34 @@ a:hover {
     letter-spacing: -.015em;
     border-bottom: 1px #e2e2e2 solid;
   }
-
+  
   h2 {
     margin: 1.5em 0 .5em;
     font-size: neo-rem(2.8);
     font-weight: 700;
   }
-
+  
   h3 {
     font-size: neo-rem(2.4);
     font-weight: 600;
   }
-
+  
   ul {
     padding: 0 40px;
     @apply font-serif;
   }
-
+  
   a {
     @apply underline text-indigo-500 decoration-indigo-500;
   }
-
+  
   li {
     padding-left: .3em;
     line-height: 1.6em;
     list-style-type: disc;
     font-size: neo-rem(2);
   }
-
+  
   pre {
     background-color: #15171a;
     color: #e5eff5;
@@ -94,11 +96,11 @@ a:hover {
     border-radius: 5px;
     font-size: neo-rem(1.4);
   }
-
+  
   img {
     margin: 24px auto;
   }
-
+  
   p {
     font-weight: 400;
     font-size: neo-rem(2);
@@ -117,7 +119,7 @@ a:hover {
     h3 {
       font-size: neo-rem(1.7);
     }
-
+    
     p {
       font-size: neo-rem(1.8);
     }
@@ -127,7 +129,27 @@ a:hover {
     li {
       font-size: neo-rem(1.8);
     }
+    
+  }
+  
+}
 
+// ABOUT STYLES
+
+.about-page {
+  h1 {
+    margin: 0;
+    border: none;
+    @apply text-black
+  } 
+  img {
+    width: 50%;
   }
 
+  @media screen and (max-width: 600px) {
+    img {
+      width: 100%;
+    }
+  }
 }
+

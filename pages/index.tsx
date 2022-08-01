@@ -14,9 +14,9 @@ export const getStaticProps = async ({ params }) => {
 const Home = ({ posts }) => (
   <div className={styles.container}>
     <Head>
-      <title>raulmar</title>
+      <title>Raulmar</title>
       <meta name="description" content="my online home" />
-      <link rel="icon" href="/favicon2.ico" />
+      <link rel="icon" href="/ocean.ico" />
     </Head>
     <Shell location="home">
       <BlogGallery posts={posts}/>  
