@@ -5,14 +5,6 @@ import Link from "next/link";
 import { format } from "date-fns";
 import readingTime from "reading-time";
 
-// import { Pagination, IPaginationProps } from '../pagination/Pagination';
-// import { PostItems } from '../utils/Content';
-
-// export type IBlogGalleryProps = {
-//   posts: PostItems[];
-//   pagination: IPaginationProps;
-// };
-
 
 
 const BlogGallery = ({ posts }) => {
@@ -35,13 +27,13 @@ const BlogGallery = ({ posts }) => {
                   </h2>
                 </a>
               </Link>
-              <span className="mt-1 text-gray-500 text-sm">{readingTime(post.html).text}</span>
+              <span className="mt-1 text-gray-500 text-sm">{readingTime(post.content).text}</span>
             </div>
             <div className="md:mb-0 mb-6 flex-shrink-0 flex flex-col">
               <span className="font-semibold title-font text-gray-500">
-                {post.tags[0].name.toUpperCase()}
+                {post.tags[0].toUpperCase()}
               </span>
-              <span className="mt-1 text-gray-500 text-sm">{format(new Date(post.published_at), 'dd/MM/yyyy')}</span>
+              <span className="mt-1 text-gray-500 text-sm">{format(new Date(post.date), 'dd/MM/yyyy')}</span>
             </div>
           </div>
           ))

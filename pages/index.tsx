@@ -2,10 +2,12 @@ import Head from 'next/head'
 import { BlogGallery } from '../components/BlogGallery'
 import { Shell } from '../components/Shell'
 import styles from '../styles/Home.module.css'
-import { getPosts } from '../utils/getPosts'
+import { getAllPosts } from '../utils/Content'
 
 export const getStaticProps = async ({ params }) => {
-  const posts = await getPosts('title,slug,tag,published_at,html');
+
+  const posts = await getAllPosts(['title', 'slug', 'date', 'content', 'tags']);
+
   return {
     props: { posts }
   }

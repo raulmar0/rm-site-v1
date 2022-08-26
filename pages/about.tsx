@@ -1,24 +1,33 @@
 import Head from 'next/head'
-import { ProjectsGallery } from '../components/ProjectsGallery'
 import { Shell } from '../components/Shell'
 import styles from '../styles/Home.module.css'
-import { getPageData } from '../utils/getPageData'
+import { getMiscBySlug } from '../utils/Content'
+import { markdownToHtml } from '../utils/Markdown'
 
 export const getStaticProps = async () => {
-  const about = await getPageData('about');
+  const about = getMiscBySlug('about' , [
+    'title',
+    'content',
+  ]);
+  const content = await markdownToHtml(about.content || '');
+
   return {
-    props: { about }
-  }
+    props: {
+      title: about.title,
+      content,
+    },
+  };
+
 }
 
-const About = ({ about }) => (
+const About = (props) => (
   <div className={styles.container}>
     <Head>
       <title>About raulmar</title>
       <meta name="description" content="raulmar's description" />
     </Head>
     <Shell location="about">
-      <div className='about-page post-container' dangerouslySetInnerHTML={{__html: about.html}}></div>
+      <div className='about-page post-container' dangerouslySetInnerHTML={{__html: props.content}}></div>
     </Shell>
   </div>
 )
