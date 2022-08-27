@@ -9,6 +9,5 @@ const nextConfig = {
 
 // With gh pages
 module.exports = {
-  assetPrefix: '/raulmar-site/',
   basePath: '/raulmar-site',
 }
