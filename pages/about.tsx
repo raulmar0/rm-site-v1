@@ -23,8 +23,9 @@ export const getStaticProps = async () => {
 const About = (props) => (
   <div className={styles.container}>
     <Head>
-      <title>About raulmar</title>
+      <title>About</title>
       <meta name="description" content="raulmar's description" />
+      <link rel="icon" href="/ocean.ico" />
     </Head>
     <Shell location="about">
       <div className='about-page post-container' dangerouslySetInnerHTML={{__html: props.content}}></div>

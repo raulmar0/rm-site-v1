@@ -4,4 +4,11 @@ const nextConfig = {
   swcMinify: true,
 }
 
-module.exports = nextConfig
+// Without gh pages or for develop
+// module.exports = nextConfig
+
+// With gh pages
+module.exports = {
+  assetPrefix: '/raulmar-site/',
+  basePath: '/raulmar-site',
+}

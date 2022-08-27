@@ -56,6 +56,7 @@ const Post = (props) => {
       <Head>
         <title>{props.title}</title>
         <meta name="description" content="An interesting raulmar's posr" />
+        <link rel="icon" href="/ocean.ico" />
       </Head>
       <div className='antialiased px-5 md:px-0'>
         <article className="max-w-screen-md mx-auto">

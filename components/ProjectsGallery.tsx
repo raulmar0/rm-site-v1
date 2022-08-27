@@ -1,40 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-const ProjectsGallery = () => {
-  const posts = [
-    {
-      title: "React Layout for the main page of a video-streaming website",
-      categories: ["React", "Netlify"],
-      img: "https://raulmarfiles.blob.core.windows.net/raulmar-site-files/projects-thumbnails/platzi-video-react-layout-thumbnail.png",
-      demo: "https://fastidious-puffpuff-c49175.netlify.app/",
-      github: "https://github.com/raulmar0/rickAndMortySPA",
-    },
-    {
-      title: "Single Page Application with vanilla JavaScript",
-      categories: ["JavaScript", "Webpack", "Travis CI"],
-      img: "https://raulmarfiles.blob.core.windows.net/raulmar-site-files/projects-thumbnails/rick-and-morty-spa-thumbnail.png",
-      demo: "https://raulmar0.github.io/rickAndMortySPA/",
-      github: "https://github.com/raulmar0/rickAndMortySPA",
-    },
-    {
-      title: "Personal Website",
-      categories: ["TypeScript", "Next", "Tailwind", "Azure", "Ghost"],
-      img: "https://raulmarfiles.blob.core.windows.net/raulmar-site-files/projects-thumbnails/raulmar-site-thumbnail.png",
-      demo: "https://raulmar.com/",
-      github: "https://github.com/raulmar0/raulmar-site",
-    },
-    {
-      title: "Library for typing effect",
-      categories: ["TypeScript"],
-      img: "https://raulmarfiles.blob.core.windows.net/raulmar-site-files/projects-thumbnails/typing-phrases-thumbnail.png",
-      demo: "https://eager-noether-f23a3e.netlify.app/",
-      github: "https://github.com/raulmar0/TypingPhrases",
-    },
-  ];
-
+const ProjectsGallery = ({ projects }) => {
   return (
 
       <div className="mt-0 grid gap-2 sm:grid-cols-2 lg:grid-cols-2">
-        {posts.map((items, key) => (
+        {projects.map((items, key) => (
           <article
             className="project min-w-full max-w-sm mx-auto mt-4 shadow-lg border rounded-md duration-300 hover:shadow-sm"
             key={key}
