@@ -4,6 +4,8 @@ date: '2020-12-14'
 tags: ['dev']
 ---
 
+Originalmente publicado en [dev.to](https://dev.to/raulmar/armando-una-gui-para-debian-raspberry-pi-os-lite-4644)
+
 # ¿Por qué no instalar una distro con GUI directamente?
 
 Las distros populares por lo general tienen un **entorno de escritorio** por defecto, sea GNOME, KDE, XFCE etc. sin embargo si queremos **comenzar** en el mundo de la **personalización en linux** debemos de empezar desde cero ya que muchas veces los entornos por defecto están intrínsecamente unidos con el sistema operativo lo que hace que sea un poco más difícil la personalización

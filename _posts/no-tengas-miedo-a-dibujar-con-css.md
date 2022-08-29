@@ -4,6 +4,9 @@ date: '2020-10-04'
 tags: ['dev']
 ---
 
+Originalmente publicado en [dev.to](https://dev.to/raulmar/no-tengas-miedo-a-dibujar-con-css-1ck)
+
+
 La temporada de **Halloween** está a la vuelta de la esquina es por eso que dibujaremos una decoración escalofríante a tu página web con CSS. 
 
 ![1](https://dev-to-uploads.s3.amazonaws.com/i/2vwau719fl596smlavyx.gif)

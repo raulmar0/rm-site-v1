@@ -4,6 +4,8 @@ date: '2020-12-26'
 tags: ['dev']
 ---
 
+Originalmente publicado en [dev.to](https://dev.to/raulmar/personaliza-tu-terminal-de-0-a-pro-3map)
+
 Ten por seguro que personalizar la terminal **no te hará un hacker ni mejor desarrollador** pero te prometo que vas a sentirte como uno. 
 
 A todo desarrolladores nos gusta la **personalización de nuestras herramientas** y que mejor que empezar con la que probablemente más interactuamos, **la terminal**.
