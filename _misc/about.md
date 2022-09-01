@@ -6,7 +6,7 @@ title: 'This is me, raulmar'
 
 A person who truly believes that every decision must be made from love, not fear. Because having hope on a better tomorrow is what has brought us this far despite the obstacles.
 
-![](https://raulmarfiles.blob.core.windows.net/raulmar-site-files/2022/7/312328_about-me-sahara%20(2)%20(1).jpg)
+![](https://raulmarfiles.blob.core.windows.net/raulmar-site-files/about-me/about-me-sahara.jpg)
 
 I'm a software developer with professional experience using web technologies such as TypeScript, Angular, Azure DevOps, etc. in order to maintain a closed source framework.
 
