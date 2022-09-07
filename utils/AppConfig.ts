@@ -23,7 +23,7 @@ export const AppConfig = {
     {
       title: "Linktree Clone with Svelte",
       categories: ["Svelte", "Vite"],
-      img: "https://raulmarfiles.blob.core.windows.net/raulmar-site-files/projects-thumbnails/whatsapp-questionnaire-bot-thumbnail.webp",
+      img: "https://raulmarfiles.blob.core.windows.net/raulmar-site-files/projects-thumbnails/my-links-thumbnail.webp",
       demo: "https://raulmar.me/",
       github: "https://github.com/raulmar0/my-links",
     },
@@ -44,7 +44,7 @@ export const AppConfig = {
     {
       title: "Library for typing effect",
       categories: ["TypeScript"],
-      img: "https://raulmarfiles.blob.core.windows.net/raulmar-site-files/projects-thumbnails/typing-phrases-thumbnail.webp",
+      img: "https://raulmarfiles.blob.core.windows.net/raulmar-site-files/projects-thumbnails/typing-phrases-thumbnail.png",
       demo: "https://eager-noether-f23a3e.netlify.app/",
       github: "https://github.com/raulmar0/TypingPhrases",
     },
