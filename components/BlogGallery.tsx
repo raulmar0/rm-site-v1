@@ -11,7 +11,7 @@ const BlogGallery = ({ posts }) => {
 
   return (
   <>    
-    <section className="text-gray-600 body-font overflow-hidden">
+    <section className="text-gray-600 body-font">
       <div className="px-5 mx-auto">
         <div className="-my-8 divide-y-2 divide-gray-100">
 
