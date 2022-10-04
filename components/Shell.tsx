@@ -4,8 +4,8 @@ import { SocialIcons } from "./SocialList";
 
 
 const Shell = (props) => (
-  <div className="antialiased w-full text-gray-700 mt-12 px-3 md:px-0 main-card overflow-y-auto">
-    <div className="max-w-screen-md mx-auto">
+  <div className="antialiased w-fit mx-auto text-gray-700 mt-12 md:px-0 main-card">
+    <div className="max-w-screen-md px-6">
       <div className="border-b border-gray-300">
         <div className="pt-4 pb-4">
           <div className="font-semibold text-3xl text-gray-900">
