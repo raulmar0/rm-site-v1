@@ -1,7 +1,7 @@
 export const AppConfig = {
   site_name: 'raulmar site',
-  title: "Hola! this is raulmar🕺",
-  description: 'Welcome to my digital home where I have fun sharing',
+  title: "Raúl Martín 🕺",
+  description: 'Internet citizen and developer of this borderless digital land.',
   linkedin_account: 'raulmarhernandez',
   github_account: 'raulmar0',
   email: 'hello@raulmar.com',

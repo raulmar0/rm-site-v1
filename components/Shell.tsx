@@ -13,7 +13,7 @@ const Shell = (props) => (
           </div>
           <div className="text-xl">{AppConfig.description}</div>
         </div>
-        <SocialIcons></SocialIcons>
+        <SocialIcons/>
         <div className="navbar-scroll">
           <Navbar location={props.location} >
 

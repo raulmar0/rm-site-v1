@@ -18,11 +18,11 @@ const BlogGallery = ({ posts }) => {
         {
           posts.map((post) => (
           // eslint-disable-next-line react/jsx-key
-          <div className="py-8 flex flex-wrap md:flex-nowrap justify-between">
+          <div className="py-8 raulmar-blog-grid">
             <div className="md:flex-grow">
               <Link href='/posts/[slug]' as={`/posts/${post.slug}`}>
                 <a className="bloglink">
-                  <h2 className="text-2xl font-medium text-gray-900 title-font">
+                  <h2 className="text-2xl font-medium text-gray-900 title-font pr-4">
                     {post.title}
                   </h2>
                 </a>
@@ -47,6 +47,12 @@ const BlogGallery = ({ posts }) => {
       {`
         .bloglink:hover {
           @apply no-underline;
+        }
+        @media (min-width: 426px) {
+          .raulmar-blog-grid {
+            display: grid;
+            grid-template-columns: auto 75px;
+          }
         }
       `}
     </style>
