@@ -7,25 +7,11 @@ export const AppConfig = {
   email: 'hello@raulmar.com',
   projects: [
     {
-      title: "Latidos por México Whatsapp bot",
-      categories: ["Node", "wweb.js", "pm2"],
-      img: `./assets/projects/whatsapp-questionnaire-bot-thumbnail.webp`,
-      demo: "https://wa.me/5218135453539?text=Hola",
-      github: "https://github.com/raulmar0/latidos-por-mexico-bot",
-    },
-    {
-      title: "Single Page Application with vanilla JavaScript",
-      categories: ["JavaScript", "Webpack", "Travis CI"],
-      img: "./assets/projects/rick-and-morty-spa-thumbnail.webp",
-      demo: "https://raulmar0.github.io/rickAndMortySPA/",
-      github: "https://github.com/raulmar0/rickAndMortySPA",
-    },
-    {
-      title: "Linktree Clone with Svelte",
-      categories: ["Svelte", "Vite"],
-      img: "./assets/projects/my-links-thumbnail.webp",
-      demo: "https://raulmar.me/",
-      github: "https://github.com/raulmar0/my-links",
+      title: "567 dance! 🕺💃",
+      categories: ["React", "TypeScript", "Capacitor", "Howler"],
+      img: `./assets/projects/567-dance-thumbnail.webp`,
+      demo: "https://raulmar0.github.io/567-dance/",
+      github: "https://github.com/raulmar0/567-dance",
     },
     {
       title: "Next.js and Ghost CMS template",
@@ -35,6 +21,13 @@ export const AppConfig = {
       github: "https://github.com/raulmar0/nextjs-ghost-template",
     },
     {
+      title: "Single Page Application with vanilla JavaScript",
+      categories: ["JavaScript", "Webpack", "Travis CI"],
+      img: "./assets/projects/rick-and-morty-spa-thumbnail.webp",
+      demo: "https://raulmar0.github.io/rickAndMortySPA/",
+      github: "https://github.com/raulmar0/rickAndMortySPA",
+    },
+    {
       title: "React Layout for the main page of a video-streaming website",
       categories: ["React", "Netlify"],
       img: "./assets/projects/platzi-video-react-layout-thumbnail.webp",
@@ -42,11 +35,18 @@ export const AppConfig = {
       github: "https://github.com/raulmar0/platziVideo",
     },
     {
-      title: "Library for typing effect",
-      categories: ["TypeScript"],
-      img: "./assets/projects/typing-phrases-thumbnail.png",
-      demo: "https://eager-noether-f23a3e.netlify.app/",
-      github: "https://github.com/raulmar0/TypingPhrases",
+      title: "Linktree Clone with Svelte",
+      categories: ["Svelte", "Vite"],
+      img: "./assets/projects/my-links-thumbnail.webp",
+      demo: "https://raulmar.me/",
+      github: "https://github.com/raulmar0/my-links",
+    },
+    {
+      title: "Latidos por México Whatsapp bot",
+      categories: ["Node", "wweb.js", "pm2"],
+      img: `./assets/projects/whatsapp-questionnaire-bot-thumbnail.webp`,
+      demo: "https://wa.me/5218135453539?text=Hola",
+      github: "https://github.com/raulmar0/latidos-por-mexico-bot",
     },
   ] 
 };
