@@ -9,5 +9,5 @@ const nextConfig = {
 
 // With gh pages
 module.exports = {
-  basePath: '/raulmar-site',
+  basePath: '/rm-site-v1',
 }
